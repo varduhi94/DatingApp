@@ -20,6 +20,7 @@ namespace DatingApp2.API.Helpers
                 .ForMember(dest => dest.Age, opt 
                     => opt.MapFrom(src => src.DateOfBirth.CalculateAge()));
             CreateMap<Photo, PhotoForDetailsDto>();
+            CreateMap<UserForUpdateDto, User>();
         }
     }
 }
